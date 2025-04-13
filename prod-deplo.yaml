@@ -1,0 +1,5 @@
+Apversion:apps/v1
+  kind:Deployment
+    metadata:java
+      name:test namew
+

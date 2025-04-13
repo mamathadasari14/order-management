@@ -1,0 +1,4 @@
+apiversion:apps
+Kind:deployment
+metadata: java
+name:
