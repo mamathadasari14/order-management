@@ -1,7 +1,8 @@
-apiversion: 40
+apiversion: apps/V1
 
 kind:deployment
 metadata:
+  name javaapp
   piversion:50
 kind:deployment
 metadata:
