@@ -1,13 +1,13 @@
 apiversion:apps.v1
 kind: deployment
 metadata: 
-name:
+name:123
   name: nginx-deployment
   lables:
     app:
       spec:
         replicas: 3
-        selector:
+        selector:i
           matchlables:
             app: nginx
             template:
