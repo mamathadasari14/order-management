@@ -2,4 +2,24 @@ apiversion:apps.v1
 kind: deployment
 metadata: 
 name:
-  name: java
+  name: nginx-deployment
+  lables:
+    app:
+      spec:
+        replicas: 3
+        selector:
+          matchlables:
+            app: nginx
+            template:
+              metadata:
+                lables:
+                  app:nginx
+                spec:
+                  containers:
+                    -name: ngixn
+                    image: nginx:1.14.12
+                    ports:
+                      - containerport: 8081
+
+
+
